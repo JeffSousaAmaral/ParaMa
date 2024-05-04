@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para minha donzela </title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #fb0101;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+    button:hover {
+        background-color: #000000;
+    }
+    #output {
+        margin-top: 20px;
+    }
+
+    #img {
+
+    }
+</style>
+</head>
+<body>
+
+<h2>Oi minha mucilonzinha , isso é apenas um pequeno agrado pra ti ! Quero te ver feliz sempre então deixei aqui meu esforço para sempre ver  esse seu sorriso lindo no seu rosto ! Você é e sempre será importante ! <div id="img"> <img src="https://i.postimg.cc/PrsM1Jtd/images-fotor-bg-remover-2024050403145.png" alt=""></div></h2>
+
+<button onclick="getSongLyric()">Coisas que gosto em você</button>
+<button onclick="getComfortPhrase()">Frases para quando você estiver triste</button>
+
+<div id="output"></div>
+
+<script>
+    function getSongLyric() {
+        var lyrics = [
+        "Seu sorriso é contagiante.",
+    "Adoro como você sempre encontra algo positivo em cada situação.",
+    "Sua simpatia é cativante.",
+    "Gosto da sua atenção aos detalhes.",
+    "A maneira como você escuta atentamente quando estou falando.",
+    "Admiro sua dedicação ao que faz.",
+    "Gosto de como você se preocupa com as pessoas ao seu redor.",
+    "Sua gentileza torna o mundo um lugar melhor.",
+    "A forma como você expressa sua gratidão é inspiradora.",
+    "Gosto da sua autenticidade e sinceridade.",
+    "A maneira como você faz com que todos se sintam bem-vindos.",
+    "Adoro como você é prestativo com os outros.",
+    "Gosto de como você se mantém positivo mesmo nos momentos difíceis.",
+    "Sua humildade é admirável.",
+    "Admiro sua paixão por aprender coisas novas.",
+    "Gosto de como você valoriza o tempo que passamos juntos.",
+    "A maneira como você se esforça para fazer o seu melhor em tudo.",
+    "Admiro sua coragem para enfrentar novos desafios.",
+    "Gosto de como você sempre dá o seu melhor.",
+    "Sua empatia torna você alguém especial.",
+    "A maneira como você trata as pessoas com gentileza e respeito.",
+    "Gosto de como você encontra beleza nas coisas simples da vida.",
+    "Sua determinação em alcançar seus objetivos é inspiradora.",
+    "Eu amo seu cabelo",
+    "Adoro o jeito que me olha",
+    "Gosto como me olha logo ápos ficar com vergonha de algo que eu falei",
+    "Gosto da sua honestidade e transparência.",
+    "A maneira como você compartilha suas experiências e aprendizados.",
+    "Adoro como você traz leveza aos momentos sérios.",
+    "Gosto de como você valoriza oque eu sou .",
+    "Sua energia positiva é contagiante.",
+    "A maneira como você trata os outros com gentileza e compaixão."
+        ];
+        var randomLyric = lyrics[Math.floor(Math.random() * lyrics.length)];
+        document.getElementById("output").innerHTML = randomLyric;
+    }
+
+    function getComfortPhrase() {
+        var phrases = [
+            "Esta tristeza é temporária; dias melhores virão.",
+            "Lembre-se: após a tempestade, vem a calmaria.",
+            "Você é mais forte do que pensa e esta tristeza não vai durar para sempre.",
+            "Não tenha medo de pedir ajuda quando precisar; você não está sozinha.",
+            "Às vezes, é necessário passar pela escuridão para apreciar plenamente a luz.",
+            "Cada dia é uma nova oportunidade para encontrar a felicidade novamente.",
+            "Permita-se sentir as emoções, mas não deixe que elas controlem você.",
+            "Mesmo nas circunstâncias mais difíceis, há sempre algo pelo qual ser grato.",
+            "Acredite na beleza da sua própria jornada, mesmo quando parecer difícil.",
+            "Você já superou desafios antes e vai superar este também.",
+            "Cada dia traz consigo uma oportunidade para recomeçar e encontrar alegria.",
+            "Se precisar de um ombro para chorar, estarei aqui para você.",
+            "Tudo passa , e eu estarei aqui para te ajudar ok ? ",
+
+        ];
+        var randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+        document.getElementById("output").innerHTML = randomPhrase;
+    }
+</script>
+
+</body>
+</html>
